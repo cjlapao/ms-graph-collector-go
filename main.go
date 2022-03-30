@@ -14,7 +14,10 @@ import (
 var svc = execution_context.Get()
 
 func main() {
-	svc.Services.Version.Minor = 2
+	svc.Services.Version.Major = 0
+	svc.Services.Version.Minor = 0
+	svc.Services.Version.Build = 0
+	svc.Services.Version.Rev = 4
 	svc.Services.Version.Name = "MS Graph Collector POC"
 	svc.Services.Version.Author = "Carlos Lapao"
 	svc.Services.Version.License = "MIT"
