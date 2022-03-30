@@ -12,6 +12,6 @@
       API_PREFIX: "/api"
       DUMP_TO_DATABASE: false
       DUMP_TO_FILE: false
-      DUMP_TO_FILE_PATH: ".\\"
+      DUMP_TO_FILE_PATH: "."
       PROCESS_SINGLE_USAGE: true
       POST_TO_NEURONS: true
