@@ -1,6 +1,6 @@
 package entities
 
-type TenantConnectionDetails struct {
+type TenantCredentials struct {
 	Name                 string `json:"name" bson:"name"`
 	TenantId             string `json:"tenantId" bson:"tenantId"`
 	ClientId             string `json:"clientId" bson:"clientId"`

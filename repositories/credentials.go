@@ -12,10 +12,10 @@ var _factory *mongodb.MongoFactory
 
 type CredentialsRepository struct{}
 
-func (c CredentialsRepository) GetCredential(tenantId string) entities.TenantConnectionDetails {
-	var result entities.TenantConnectionDetails
+func (c CredentialsRepository) GetCredential(tenantId string) entities.TenantCredentials {
+	var result entities.TenantCredentials
 
-	collection := mongodbSvc.GlobalDatabase().GetCollection("credentials").Repository()
+	collection := mongodbSvc.GlobalDatabase().GetCollection(CredentialsCollectionName).Repository()
 
 	filter := bson.D{{Key: "tenantId", Value: tenantId}}
 	dbResult := collection.FindOne(filter)
@@ -24,10 +24,10 @@ func (c CredentialsRepository) GetCredential(tenantId string) entities.TenantCon
 	return result
 }
 
-func (c CredentialsRepository) GetAllCredential() []entities.TenantConnectionDetails {
-	result := make([]entities.TenantConnectionDetails, 0)
+func (c CredentialsRepository) GetAllCredential() []entities.TenantCredentials {
+	result := make([]entities.TenantCredentials, 0)
 	ctx := context.Background()
-	collection := mongodbSvc.GlobalDatabase().GetCollection("credentials").Repository()
+	collection := mongodbSvc.GlobalDatabase().GetCollection(CredentialsCollectionName).Repository()
 
 	filter := bson.D{{}}
 
@@ -37,7 +37,7 @@ func (c CredentialsRepository) GetAllCredential() []entities.TenantConnectionDet
 	}
 
 	for cursor.Next(ctx) {
-		var element entities.TenantConnectionDetails
+		var element entities.TenantCredentials
 		cursor.Decode(&element)
 		result = append(result, element)
 	}

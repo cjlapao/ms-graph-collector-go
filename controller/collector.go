@@ -46,7 +46,7 @@ func PostCredentialsController(w http.ResponseWriter, r *http.Request) {
 	logger := log.Get()
 	var mongodbSvc = mongodb.Get()
 
-	var credential entities.TenantConnectionDetails
+	var credential entities.TenantCredentials
 
 	err := json.NewDecoder(r.Body).Decode(&credential)
 

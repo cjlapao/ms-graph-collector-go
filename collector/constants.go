@@ -16,19 +16,14 @@ const (
 )
 
 const (
-	ODataTop = "?$top=999"
+	TopRecords = 999
 )
 
 const (
-	MSGraphOrgApplicationsCollection                = "Microsoft.Graph.OrgApplications"
-	MSGraphUsersCollection                          = "Microsoft.Graph.Users"
-	MSGraphUsersOrgApplicationsCollection           = "Microsoft.Graph.Users.OrgApplications"
-	MSGraphUsersLicensesCollection                  = "Microsoft.Graph.Users.Licenses"
-	MSGraphUsageCollection                          = "Microsoft.Graph.Usages"
-	MSGraphServicePrincipalsCollection              = "Microsoft.Graph.ServicePrincipals"
-	MSGraphTenantSkusCollection                     = "Microsoft.Graph.Tenant.Skus"
-	MSGraphOffice365ActivationsUserCountsCollection = "Microsoft.Graph.Office365.ActivationsUserCounts"
-	MSGraphOffice365ActivationsUserDetailCollection = "Microsoft.Graph.Office365.ActivationsUserDetails"
-	MSGraphOffice365ActivationCountsCollection      = "Microsoft.Graph.Office365.ActivationCounts"
-	MSGraphOffice365AppUserDetailCollection         = "Microsoft.Graph.Office365.Office365AppUserDetail"
+	MSGraphMicrosoftApplicationsCollection = "Microsoft.Graph.MicrosoftApplications"
+	MSGraphUsersApplicationsCollection     = "Microsoft.Graph.UsersApplications"
+	MSGraphUsersCollection                 = "Microsoft.Graph.Users"
+	MSGraphUsageCollection                 = "Microsoft.Graph.Signins"
+	MSGraphServicePrincipalsCollection     = "Microsoft.Graph.ServicePrincipals"
+	NeuronsUsers                           = "Neurons.Users"
 )
