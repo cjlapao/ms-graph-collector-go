@@ -6,9 +6,7 @@ import (
 
 // Collection
 const (
-	UsersCollectionName       = "Users"
-	CampainsCollectionName    = "Campaigns"
-	CredentialsCollectionName = "Credentials"
+	CredentialsCollectionName = "credentials"
 )
 
 var mongodbSvc = mongodb.Get()

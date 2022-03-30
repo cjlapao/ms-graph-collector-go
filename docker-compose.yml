@@ -6,7 +6,12 @@
      ports:
        - 10000:10000
      environment:
-      MONGODB_CONNECTION_STRING: "mongodb://mongodb.local-cluster.internal:27017/?readPreference=primaryPreferred&appname=MongoDB%20Compass&directConnection=true&ssl=false"
+      MONGODB_CONNECTION_STRING: ""
       MONGODB_DATABASENAME: "saas_demo"
       HTTP_PORT: 10000
       API_PREFIX: "/api"
+      DUMP_TO_DATABASE: false
+      DUMP_TO_FILE: false
+      DUMP_TO_FILE_PATH: ".\\"
+      PROCESS_SINGLE_USAGE: true
+      POST_TO_NEURONS: true
