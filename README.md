@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![Build](https://github.com/cjlapao/ms-graph-collector-go/workflows/Build/badge.svg) ![Release](https://github.com/cjlapao/ms-graph-collector-go/workflows/Release/badge.svg) ![Security](https://github.com/cjlapao/ms-graph-collector-go/workflows/CodeQL/badge.svg)  
 
-This tool allows you to collect data from Microsoft Graph API.
+This tool allows you to collect data from Microsoft Graph API.d
 
 ## How to Run the API
 
