@@ -1,8 +1,8 @@
 # Microsoft Graph Collector POC
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![Build](https://github.com/cjlapao/ms-graph-collector-go/workflows/Build/badge.svg) ![Release](https://github.com/cjlapao/ms-graph-collector-go/workflows/Release/badge.svg) ![Security](https://github.com/cjlapao/ms-graph-collector-go/workflows/CodeQL/badge.svg)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![PR Builder](https://github.com/cjlapao/ms-graph-collector-go/actions/workflows/pr.yml/badge.svg)](https://github.com/cjlapao/ms-graph-collector-go/actions/workflows/pr.yml) [![CI Release](https://github.com/cjlapao/ms-graph-collector-go/actions/workflows/ci.yml/badge.svg)](https://github.com/cjlapao/ms-graph-collector-go/actions/workflows/ci.yml) ![Security](https://github.com/cjlapao/ms-graph-collector-go/workflows/CodeQL/badge.svg)  
 
-This tool allows you to collect data from Microsoft Graph API.
+This tool allows you to collect data from Microsoft Graph API and save it into a mongo database
 
 ## How to Run the API
 
